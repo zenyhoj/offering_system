@@ -1,0 +1,12 @@
+SELECT sum( amount ) AS TOTAL
+FROM tbl_member_offer
+WHERE date_given = "2014-06-08"
+AND offer_id = "LO"
+
+
+----merge tbl_members and tbl_member_offer----
+SELECT tbl_members.member_id, tbl_members.member_lname, tbl_members.member_fname, tbl_members.member_midname, tbl_member_offer.offer_id, tbl_member_offer.amount, tbl_member_offer.date_given
+FROM tbl_members, tbl_member_offer
+WHERE tbl_members.member_id = tbl_member_offer.member_id
+ORDER BY tbl_members.member_id
+LIMIT 0 , 30

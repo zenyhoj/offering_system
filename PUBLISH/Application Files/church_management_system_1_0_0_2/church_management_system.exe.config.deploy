@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="church_management_system.My.MySettings.church_offeringConnectionString"
+            connectionString="server=localhost;User Id=root;database=church_offering"
+            providerName="MySql.Data.MySqlClient" />
+        <add name="church_management_system.My.MySettings.church_offeringConnectionString1"
+            connectionString="server=localhost;database=church_offering;User Id=root"
+            providerName="MySql.Data.MySqlClient" />
+    </connectionStrings>
+    <startup>
+        <supportedRuntime version="v2.0.50727" />
+    </startup>
+</configuration>
